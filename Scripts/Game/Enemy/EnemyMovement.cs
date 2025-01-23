@@ -21,6 +21,9 @@ public class EnemyMovement : MonoBehaviour
     {
         _player = FindFirstObjectByType<PlayerMovement>().transform;
         _rigidbody = GetComponent<Rigidbody2D>();
+        _aware = true;
+        UpdateTargetDirection();
+        RotateTowardsTarget();
     }
 
     // Update is called once per frame

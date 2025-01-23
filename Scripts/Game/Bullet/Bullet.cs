@@ -32,4 +32,14 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        GameObject hitObject = collision.gameObject;
+        if ( hitObject.name.Contains("Enemy"))
+        {
+            Destroy(hitObject);
+        }
+        Destroy(gameObject);
+    }
 }
