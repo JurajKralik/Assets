@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\DAX\\KralikJurajZombieGame\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2232CA-D7EB-7334-8F71-2A2FD5E6488B}|Assembly-CSharp.Player.csproj|C:\\Users\\DAX\\KralikJurajZombieGame\\assets\\scripts\\game\\bullet\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED2232CA-D7EB-7334-8F71-2A2FD5E6488B}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\game\\bullet\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2232CA-D7EB-7334-8F71-2A2FD5E6488B}|Assembly-CSharp.Player.csproj|C:\\Users\\DAX\\KralikJurajZombieGame\\assets\\scripts\\game\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED2232CA-D7EB-7334-8F71-2A2FD5E6488B}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\game\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2232CA-D7EB-7334-8F71-2A2FD5E6488B}|Assembly-CSharp.Player.csproj|c:\\users\\dax\\kralikjurajzombiegame\\assets\\scripts\\game\\spawner\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED2232CA-D7EB-7334-8F71-2A2FD5E6488B}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\game\\spawner\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2232CA-D7EB-7334-8F71-2A2FD5E6488B}|Assembly-CSharp.Player.csproj|C:\\Users\\DAX\\KralikJurajZombieGame\\assets\\scripts\\game\\camera\\follow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED2232CA-D7EB-7334-8F71-2A2FD5E6488B}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\game\\camera\\follow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED2232CA-D7EB-7334-8F71-2A2FD5E6488B}|Assembly-CSharp.Player.csproj|C:\\Users\\DAX\\KralikJurajZombieGame\\assets\\scripts\\game\\enemy\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED2232CA-D7EB-7334-8F71-2A2FD5E6488B}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\game\\enemy\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Spawner.cs",
+              "DocumentMoniker": "C:\\Users\\DAX\\KralikJurajZombieGame\\Assets\\Scripts\\Game\\Spawner\\Spawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\Spawner\\Spawner.cs",
+              "ToolTip": "C:\\Users\\DAX\\KralikJurajZombieGame\\Assets\\Scripts\\Game\\Spawner\\Spawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\Spawner\\Spawner.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAgwDkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T23:05:18.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Bullet.cs",
+              "DocumentMoniker": "C:\\Users\\DAX\\KralikJurajZombieGame\\Assets\\Scripts\\Game\\Bullet\\Bullet.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\Bullet\\Bullet.cs",
+              "ToolTip": "C:\\Users\\DAX\\KralikJurajZombieGame\\Assets\\Scripts\\Game\\Bullet\\Bullet.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\Bullet\\Bullet.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwDcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T19:53:38.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EnemyMovement.cs",
+              "DocumentMoniker": "C:\\Users\\DAX\\KralikJurajZombieGame\\Assets\\Scripts\\Game\\Enemy\\EnemyMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\Enemy\\EnemyMovement.cs",
+              "ToolTip": "C:\\Users\\DAX\\KralikJurajZombieGame\\Assets\\Scripts\\Game\\Enemy\\EnemyMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\Enemy\\EnemyMovement.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAcwBUAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T20:38:30.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Follow.cs",
+              "DocumentMoniker": "C:\\Users\\DAX\\KralikJurajZombieGame\\Assets\\Scripts\\Game\\Camera\\Follow.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\Camera\\Follow.cs",
+              "ToolTip": "C:\\Users\\DAX\\KralikJurajZombieGame\\Assets\\Scripts\\Game\\Camera\\Follow.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\Camera\\Follow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T17:43:35.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\DAX\\KralikJurajZombieGame\\Assets\\Scripts\\Game\\Player\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\Player\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\DAX\\KralikJurajZombieGame\\Assets\\Scripts\\Game\\Player\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\Player\\PlayerMovement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T15:34:12.889Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

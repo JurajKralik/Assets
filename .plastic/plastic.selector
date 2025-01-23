@@ -1,0 +1,4 @@
+repository "KralikJurajZombieGame/KralikJurajZombieGame@7972437225808@cloud"
+  path "/"
+    br "/main"
+    co "/main"
