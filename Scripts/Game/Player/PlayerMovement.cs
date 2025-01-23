@@ -15,11 +15,13 @@ public class PlayerMovement : MonoBehaviour
     public float _fireRate;
     public GameObject _bullet;
     public Transform _bulletTransform;
+    public int _health;
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        _health = 100;
         _mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         _rigidbody = GetComponent<Rigidbody2D>();
     }
@@ -54,6 +56,15 @@ public class PlayerMovement : MonoBehaviour
         {
             _canFire = false;
             Instantiate(_bullet, _bulletTransform.position, Quaternion.identity);
+        }
+
+        // Health
+        TextMesh health = GameObject.FindGameObjectWithTag("Health").GetComponent<TextMesh>();
+        health.text = _health.ToString();
+        if (_health <= 0)
+        {
+            Destroy(health);
+            Destroy(gameObject);
         }
     }
     private void OnMove(InputValue inputValue)

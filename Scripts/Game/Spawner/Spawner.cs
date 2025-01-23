@@ -20,6 +20,11 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (_player == null) 
+        {
+            return;
+        }
+
         _currentSpawnTime += Time.deltaTime;
         if (_currentSpawnTime > _spawnTime)
         {
@@ -34,7 +39,7 @@ public class Spawner : MonoBehaviour
 
     private GameObject GetRandomSpawner()
     {
-        int randomIndex = Random.Range(0, 30);
+        int randomIndex = Random.Range(0, 38);
         int currentIndex = 0;
         foreach (Transform child in transform)
         {

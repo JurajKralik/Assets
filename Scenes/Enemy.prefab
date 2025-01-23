@@ -105,6 +105,7 @@ MonoBehaviour:
   _playerAwarenessDistance: 15
   _speed: 6
   _rotationSpeed: 80
+  _attackSpeed: 0.5
 --- !u!50 &3499102260929279200
 Rigidbody2D:
   serializedVersion: 5

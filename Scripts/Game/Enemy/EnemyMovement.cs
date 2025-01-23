@@ -15,6 +15,9 @@ public class EnemyMovement : MonoBehaviour
     private float _rotationSpeed;
     private Rigidbody2D _rigidbody;
     private Vector2 _targetDirection;
+    public float _attackSpeed;
+    private float _reload;
+    private bool _canAttack;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,6 +25,10 @@ public class EnemyMovement : MonoBehaviour
         _player = FindFirstObjectByType<PlayerMovement>().transform;
         _rigidbody = GetComponent<Rigidbody2D>();
         _aware = true;
+        if (!_player)
+        {
+            return;
+        }
         UpdateTargetDirection();
         RotateTowardsTarget();
     }
@@ -29,10 +36,15 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!_player)
+        {
+            return;
+        }
         Vector2 enemyToPlayerVector = _player.position - transform.position;
         _directionToPlayer = enemyToPlayerVector.normalized;
+        float magnitude = enemyToPlayerVector.magnitude;
 
-        if (enemyToPlayerVector.magnitude <= _playerAwarenessDistance)
+        if (magnitude <= _playerAwarenessDistance)
         {
             _aware = true;
         }
@@ -40,9 +52,34 @@ public class EnemyMovement : MonoBehaviour
         {
             _aware = false;
         }
+        Attack(magnitude);
         UpdateTargetDirection();
         RotateTowardsTarget();
         SetVelocity();
+    }
+
+    private void Attack(float magnitude)
+    {
+        if (!_canAttack)
+        {
+            _reload += Time.deltaTime;
+            if (_reload > _attackSpeed)
+            {
+                _reload = 0;
+                _canAttack = true;
+            }
+            return;
+        }
+
+        if (magnitude < 1)
+        {
+            PlayerMovement player = FindFirstObjectByType<PlayerMovement>();
+            if (player != null)
+            {
+                player._health -= 10;
+                _canAttack = false;
+            }
+        }
     }
 
     private void UpdateTargetDirection()
