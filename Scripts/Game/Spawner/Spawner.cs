@@ -54,7 +54,7 @@ public class Spawner : MonoBehaviour
             }
             Vector2 spawnerToPlayerVector = _player.position - child.gameObject.transform.position;
             float magnitude = spawnerToPlayerVector.magnitude;
-            if (magnitude < 40 && magnitude > 4)
+            if (magnitude < 40 && magnitude > 6)
             {
                 return child.gameObject;
             }
