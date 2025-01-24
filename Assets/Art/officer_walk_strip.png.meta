@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      officer_walk_strip_0: -4729825984170992337
+      officer_walk_strip_1: -5238665225185759123
+      officer_walk_strip_2: 3381460125853822527
+      officer_walk_strip_3: 3453067635936211346
+      officer_walk_strip_4: -4612859126273134392
+      officer_walk_strip_5: 1250091866524581791
+      officer_walk_strip_6: -7935622284520449271
+      officer_walk_strip_7: 1968682320372135562
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

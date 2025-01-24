@@ -22,7 +22,7 @@ public class EnemyMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        _player = FindFirstObjectByType<PlayerMovement>().transform;
+        FindPlayer();
         _rigidbody = GetComponent<Rigidbody2D>();
         _aware = true;
         if (!_player)
@@ -38,6 +38,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (!_player)
         {
+            FindPlayer();
             return;
         }
         Vector2 enemyToPlayerVector = _player.position - transform.position;
@@ -81,8 +82,20 @@ public class EnemyMovement : MonoBehaviour
             }
         }
     }
+    private void FindPlayer()
+    {
+        PlayerMovement player = FindFirstObjectByType<PlayerMovement>();
+        if (player != null) {
+            _player = player.transform;
+        }
+        else
+        {
+            _player = null;
+        }
+    }
 
-    private void UpdateTargetDirection()
+
+private void UpdateTargetDirection()
     {
         if (_aware)
         {

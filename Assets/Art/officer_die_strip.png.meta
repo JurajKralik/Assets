@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      officer_die_strip_0: -3972493813406467878
+      officer_die_strip_1: 278993467037603289
+      officer_die_strip_2: 9096299397353477624
+      officer_die_strip_3: 7616713909618002978
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Building_chimey_0: 6399230626013969442
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

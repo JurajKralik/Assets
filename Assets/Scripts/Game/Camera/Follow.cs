@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class Follow : MonoBehaviour
 {
-    public Transform _target;
+    private Transform _target;
     public Vector3 _offset;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        FindPlayer();
     }
 
     // Update is called once per frame
@@ -16,10 +16,24 @@ public class Follow : MonoBehaviour
     {
         if (_target == null)
         {
+            FindPlayer();
             return;
         }
-        Vector3 newPosition = new Vector3(_target.transform.position.x, _target.transform.position.y, _target.transform.position.z);
+        Vector3 newPosition = new Vector3(_target.position.x, _target.position.y, _target.position.z);
         newPosition += _offset;
         transform.position = newPosition;
+    }
+    private void FindPlayer()
+    {
+        PlayerMovement target = FindFirstObjectByType<PlayerMovement>();
+        if (target != null)
+        {
+            _target = target.transform;
+        }
+        else
+        {
+            _target = null;
+        }
+        
     }
 }

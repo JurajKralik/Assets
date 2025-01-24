@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject _bullet;
     public Transform _bulletTransform;
     public int _health;
+    public TextMesh _dead;
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -60,9 +61,14 @@ public class PlayerMovement : MonoBehaviour
 
         // Health
         TextMesh health = GameObject.FindGameObjectWithTag("Health").GetComponent<TextMesh>();
-        health.text = _health.ToString();
+        if (health != null)
+        {
+            health.text = _health.ToString();
+            
+        }
         if (_health <= 0)
         {
+            Instantiate(_dead, transform.position, Quaternion.identity);
             Destroy(health);
             Destroy(gameObject);
         }
